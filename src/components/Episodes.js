@@ -6,7 +6,7 @@ import parse from 'html-react-parser'
 // Exports
 export default function Episodes( props ) {
     return (
-        <div className="episodes">
+        <div className="episodes" data-testid="episopdesTest">
             { props.episodes.map( e => (
             <div className="episode" key={ e.id }>
                 { e.image && ( <img className="episode-image" src={ e.image.medium } alt={ e.name } /> )}
